@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Docker (OCI Format) base images recipe extractor.",
   "main": "src/index.js",
+  "bin": "src/index.js",
   "scripts": {},
   "type": "module",
   "repository": {
@@ -20,6 +21,12 @@
     "eslint": "^8.4.1"
   },
   "eslintConfig": {
-    "extends": "@hazmi35/eslint-config/node"
+    "extends": "@hazmi35/eslint-config/node",
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  },
+  "engines": {
+    "node": ">=16.8.0"
   }
 }
