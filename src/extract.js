@@ -1,5 +1,5 @@
 import { getDockerfile } from "./util/getDockerfile.js";
-import { getRecipe } from "./getRecipe.js";
+import { getRecipe } from "./util/getRecipe.js";
 import { seperateSemver } from "./util/seperateSemver.js";
 import { applyVariant } from "./util/applyVariant.js";
 

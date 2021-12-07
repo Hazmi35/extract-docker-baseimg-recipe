@@ -1,4 +1,4 @@
-import { getValue } from "./util/getValue.js";
+import { getValue } from "./getValue.js";
 
 export function getRecipe(lines) {
     return {
