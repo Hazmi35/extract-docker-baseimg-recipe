@@ -1,0 +1,1 @@
+# extract-docker-baseimg-recipe
