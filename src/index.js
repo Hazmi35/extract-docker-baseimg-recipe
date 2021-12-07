@@ -13,7 +13,7 @@ const { variant, tags: originalTags, version, platforms } = getRecipe(lines);
 const versions = seperateSemver(version);
 const tags = [
     ...versions.map(v => applyVariant(v, variant)),
-    ...originalTags.map(t => applyVariant(t, variant))
+    ...originalTags.map(t => applyVariant(t, variant)).reverse()
 ];
 
 const recipe = { tags, variant, platforms, version };
