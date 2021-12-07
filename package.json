@@ -1,0 +1,18 @@
+{
+  "name": "@hazmi35/extract-docker-baseimg-recipe",
+  "version": "0.1.0",
+  "description": "Docker (OCI Format) base images recipe extractor.",
+  "main": "src/index.js",
+  "scripts": {},
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hazmi35/extract-docker-baseimg-recipe.git"
+  },
+  "author": "Hazmi35 <contact@hzmi.xyz> (https://hzmi.xyz)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hazmi35/extract-docker-baseimg-recipe/issues"
+  },
+  "homepage": "https://github.com/Hazmi35/extract-docker-baseimg-recipe#readme"
+}
