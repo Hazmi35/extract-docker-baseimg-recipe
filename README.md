@@ -1,15 +1,15 @@
 # extract-docker-baseimg-recipe
-Docker (OCI) base images recipe extractor.
+Docker (OCI Format) base images recipe extractor.
 
 ## FAQ
 **Question:** What is this?
 
-**Answer**: This is a simple cli program to extract Docker (OCI format) base images recipe for example: tags, platforms, versions etc.
+**Answer**: This is a simple cli program to extract Docker (OCI Format) base images recipe for example: tags, platforms, versions etc.
 ##
 
 **Question**: Where do you use this?
 
-**Answer**: It is used in my *Docker (OCI format) base images build system*, for example [Hazmi35/docker-node](https://github.com/Hazmi35/docker-node).
+**Answer**: It is used in my *Docker (OCI Format) base images build system*, for example [Hazmi35/docker-node](https://github.com/Hazmi35/docker-node).
 It isn't made to be used by public. But you can use/modify it anyway
 ##
 
