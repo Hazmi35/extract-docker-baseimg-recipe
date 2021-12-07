@@ -1,22 +1,11 @@
 #!/usr/bin/env node
 
 import { getInputArgs } from "./util/getInputArgs.js";
-import { getDockerfile } from "./util/getDockerfile.js";
-import { getRecipe } from "./getRecipe.js";
-import { seperateSemver } from "./util/seperateSemver.js";
-import { applyVariant } from "./util/applyVariant.js";
+import { extract } from "./extract.js";
 
-const { path, key } = getInputArgs();
-const { lines } = getDockerfile(path);
-const { variant, tags: originalTags, version, platforms } = getRecipe(lines);
+const { key, path } = getInputArgs();
 
-const versions = seperateSemver(version);
-const tags = [
-    ...versions.map(v => applyVariant(v, variant)).reverse(),
-    ...originalTags.map(t => applyVariant(t, variant))
-];
-
-const recipe = { tags, variant, platforms, version };
+const recipe = extract(path);
 
 if (key) {
     let value = recipe[key];
