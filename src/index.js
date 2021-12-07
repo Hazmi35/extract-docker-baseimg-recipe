@@ -18,5 +18,11 @@ const tags = [
 
 const recipe = { tags, variant, platforms, version };
 
-if (key) console.info(recipe[key]);
-else console.info(recipe);
+if (key) {
+    let value = recipe[key];
+    if (value instanceof Array) value = value.join(", ");
+
+    console.info(value);
+} else {
+    console.info(JSON.stringify(recipe));
+}
