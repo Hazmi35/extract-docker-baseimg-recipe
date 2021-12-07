@@ -13,7 +13,7 @@ Docker (OCI Format) base images recipe extractor.
 It isn't made to be used by public. But you can use/modify it anyway
 ##
 
-**Questions:** How does this works?
+**Question:** How does this works?
 
 **Answer:** It reads a comment in line 1, 2 and 3 for image tags, variant, and target platforms respectively and it extracts the version from the line 4 which is a FROM instruction, for example: `FROM node:16.13.1-alpine`, it will extract the version `16.13.1`.
 
