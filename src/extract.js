@@ -9,7 +9,7 @@ export function extract(path) {
 
     const versions = seperateSemver(version);
     const tags = [
-        ...versions.map(v => applyVariant(v, variant)).reverse(),
+        ...versions.map(v => applyVariant(v, variant)),
         ...originalTags.map(t => applyVariant(t, variant))
     ];
 
