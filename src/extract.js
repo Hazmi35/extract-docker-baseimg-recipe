@@ -11,7 +11,7 @@ export function extract(path) {
     const tags = [
         ...versions.map(v => applyVariant(v, variant)).reverse(),
         ...originalTags.map(t => applyVariant(t, variant))
-    ];
+    ].reverse();
 
     return { tags, variant, platforms, version };
 }
