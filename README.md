@@ -4,7 +4,7 @@ Docker (OCI Format) base images recipe extractor.
 ## FAQ
 **Question:** What is this?
 
-**Answer**: This is a simple cli program to extract Docker (OCI Format) base images recipe for example: tags, platforms, versions etc.
+**Answer**: This is a simple program to extract Docker (OCI Format) base images recipe for example: tags, platforms, versions etc.
 ##
 
 **Question**: Where do you use this?
