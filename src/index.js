@@ -11,7 +11,9 @@ const cli = meow(`
     Options
       --apply-variant, --no-apply-variant, -a   Toggle whether to apply variant to tags or not. Type: boolean. Default: true
 
-      --help    Show help menu
+      --help                                    Print help menu
+
+      --version                                 Print the version of this program
 `, {
     importMeta: import.meta,
     flags: {
