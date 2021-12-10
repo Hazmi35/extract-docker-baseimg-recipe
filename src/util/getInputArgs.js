@@ -1,6 +1,3 @@
-import { resolve } from "node:path";
-import { cwd, argv } from "node:process";
-
-export function getInputArgs() {
-    return { path: resolve(cwd(), argv.at(2)), key: argv.at(3) };
+export function getInputArgs(input) {
+    return { path: input.at(0), key: input.at(1) };
 }
