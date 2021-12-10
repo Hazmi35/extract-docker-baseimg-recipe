@@ -11,6 +11,8 @@ const cli = meow(`
     Options
       --apply-variant, --no-apply-variant, -a   Toggle whether to apply variant to tags or not. Type: boolean. Default: true
 
+      --seperator, -s                           What seperator to use for Array if [key] query is used. use "\\n" for newline. Type: string. Default: , (,<space>)
+
       --help                                    Print help menu
 
       --version                                 Print the version of this program
@@ -21,6 +23,11 @@ const cli = meow(`
             type: "boolean",
             alias: "a",
             default: true
+        },
+        seperator: {
+            type: "string",
+            alias: "s",
+            default: ", "
         }
     }
 });
@@ -32,7 +39,7 @@ if (path) {
 
     if (key) {
         let value = recipe[key];
-        if (value instanceof Array) value = value.join(", ");
+        if (value instanceof Array) value = value.join(flags.seperator === "\\n" ? "\n" : flags.seperator);
 
         console.info(value);
     } else {
