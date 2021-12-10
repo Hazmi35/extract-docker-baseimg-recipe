@@ -4,7 +4,9 @@
   "description": "Docker (OCI Format) base images recipe extractor.",
   "main": "src/extract.js",
   "bin": "src/index.js",
-  "scripts": {},
+  "scripts": {
+    "lint": "eslint src/"
+  },
   "files": [
     "src"
   ],
