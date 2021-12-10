@@ -1,17 +1,34 @@
 #!/usr/bin/env node
 
+import meow from "meow";
 import { getInputArgs } from "./util/getInputArgs.js";
 import { extract } from "./extract.js";
 
-const { key, path } = getInputArgs();
+const cli = meow(`
+    Usage
+      $ extract-docker-baseimg-recipe [Options] <Dockerfile path> [key]
 
-const recipe = extract(path);
+    Options
+      --apply-variant, --no-apply-variant, -a	Toggle to apply variant to tags. Default: true
 
-if (key) {
-    let value = recipe[key];
-    if (value instanceof Array) value = value.join(", ");
+      --help    Show help menu
+`, {
+    importMeta: import.meta
+});
 
-    console.info(value);
+const { path, key } = getInputArgs(cli.input);
+
+if (path) {
+    const recipe = extract(path);
+
+    if (key) {
+        let value = recipe[key];
+        if (value instanceof Array) value = value.join(", ");
+
+        console.info(value);
+    } else {
+        console.info(JSON.stringify(recipe));
+    }
 } else {
-    console.info(JSON.stringify(recipe));
+    cli.showHelp(1);
 }
