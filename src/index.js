@@ -9,7 +9,7 @@ const cli = meow(`
       $ extract-docker-baseimg-recipe [Options] <Dockerfile path> [key]
 
     Options
-      --apply-variant, --no-apply-variant, -a   Toggle whether to apply variant to tags or not. Default: true
+      --apply-variant, --no-apply-variant, -a   Toggle whether to apply variant to tags or not. Type: boolean. Default: true
 
       --help    Show help menu
 `, {
