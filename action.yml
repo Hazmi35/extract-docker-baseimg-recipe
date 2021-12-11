@@ -9,9 +9,13 @@ inputs:
     required: false
     default: 'true'
   seperator:
-    description: 'What seperator to use for Array if [key] query is used. use "\n" for newline. Type: string. Default: , (,<space>)'
+    description: 'What seperator to use for Array if [key] query is used. use "\\n" for newline. Type: string. Default: ", "'
     required: false
-    default: ", "
+    default: ', '
+  reverseTags:
+    description: 'Reverse the tags array. Type: boolean. Default: false'
+    required: false
+    default: 'false'
 outputs:
   tags: # id of output
     description: 'The tags of the specified Dockerfile'
