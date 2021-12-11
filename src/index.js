@@ -13,6 +13,8 @@ const cli = meow(`
 
       --seperator, -s                           What seperator to use for Array if [key] query is used. use "\\n" for newline. Type: string. Default: ", "
 
+      --reverse-tags, --no-reverse-tags, -r     Reverse the tags array. Type: boolean. Default: false
+
       --help                                    Print help menu
 
       --version                                 Print the version of this program
@@ -28,6 +30,11 @@ const cli = meow(`
             type: "string",
             alias: "s",
             default: ", "
+        },
+        reverseTags: {
+            type: "boolean",
+            alias: "r",
+            default: false
         }
     }
 });
@@ -35,7 +42,7 @@ const cli = meow(`
 const { path, key, flags } = getInput(cli.input, cli.flags);
 
 if (path) {
-    const recipe = extract(path, { applyVariant: flags.applyVariant });
+    const recipe = extract(path, { applyVariant: flags.applyVariant, reverseTags: flags.reverseTags });
 
     if (key) {
         let value = recipe[key];
