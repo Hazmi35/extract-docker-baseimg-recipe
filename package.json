@@ -35,7 +35,6 @@
     "node": ">=16.8.0"
   },
   "dependencies": {
-    "@actions/core": "^1.6.0",
     "meow": "^10.1.2"
   }
 }
