@@ -3,7 +3,7 @@ import { getRecipe } from "./util/getRecipe.js";
 import { seperateSemver } from "./util/seperateSemver.js";
 import { applyVariant } from "./util/applyVariant.js";
 
-export function extract(path, options = { applyVariant: true }) {
+export function extract(path, options = { applyVariant: true, reverseTags: false }) {
     const { lines } = getDockerfile(path);
     const { variant, tags: originalTags, version, platforms } = getRecipe(lines);
 
@@ -13,5 +13,5 @@ export function extract(path, options = { applyVariant: true }) {
         ...originalTags
     ].map(t => options.applyVariant ? applyVariant(t, variant) : t);
 
-    return { tags, variant, platforms, version };
+    return { tags: options.reverseTags ? tags.reverse() : tags, variant, platforms, version };
 }
