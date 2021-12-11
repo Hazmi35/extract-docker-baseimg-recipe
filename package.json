@@ -1,6 +1,6 @@
 {
   "name": "@hazmi35/extract-docker-baseimg-recipe",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Docker (OCI Format) base images recipe extractor.",
   "main": "src/extract.js",
   "bin": "src/index.js",
