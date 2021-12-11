@@ -28,3 +28,6 @@ outputs:
 runs:
   using: 'node16'
   main: 'src/action.js'
+branding:
+  color: blue
+  icon: book-open
