@@ -1,0 +1,30 @@
+name: 'Extract Docker Base Image Recipe'
+description: 'Docker (OCI Format) base images recipe extractor'
+inputs:
+  path:  # id of input
+    description: 'Path to Dockerfile'
+    required: true
+  applyVariant:
+    description: 'Toggle whether to apply variant to tags or not. Type: boolean. Default: true'
+    required: false
+    default: 'true'
+  seperator:
+    description: 'What seperator to use for Array if [key] query is used. use "\\n" for newline. Type: string. Default: ", "'
+    required: false
+    default: ', '
+  reverseTags:
+    description: 'Reverse the tags array. Type: boolean. Default: false'
+    required: false
+    default: 'false'
+outputs:
+  tags: # id of output
+    description: 'The tags of the specified Dockerfile'
+  variant:
+    description: 'The variant of the specified Dockerfile'
+  platforms:
+    description: 'Available platforms of the specified Dockerfile'
+  version:
+    description: 'The version of the specified Dockerfile'
+runs:
+  using: 'node16'
+  main: 'src/action.js'
