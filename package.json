@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Hazmi35/extract-docker-baseimg-recipe#readme",
   "devDependencies": {
-    "@hazmi35/eslint-config": "^7.0.1",
+    "@hazmi35/eslint-config": "^8.0.0",
     "eslint": "^8.4.1"
   },
   "eslintConfig": {
