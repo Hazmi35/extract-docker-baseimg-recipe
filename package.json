@@ -2,39 +2,38 @@
   "name": "@hazmi35/extract-docker-baseimg-recipe",
   "version": "1.3.1",
   "description": "Docker (OCI Format) base images recipe extractor.",
-  "main": "src/extract.js",
-  "bin": "src/index.js",
-  "scripts": {
-    "lint": "eslint src/"
+  "homepage": "https://github.com/Hazmi35/extract-docker-baseimg-recipe#readme",
+  "bugs": {
+    "url": "https://github.com/Hazmi35/extract-docker-baseimg-recipe/issues"
   },
-  "files": [
-    "src"
-  ],
-  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Hazmi35/extract-docker-baseimg-recipe.git"
   },
-  "author": "Hazmi35 <contact@hzmi.xyz> (https://hzmi.xyz)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Hazmi35/extract-docker-baseimg-recipe/issues"
-  },
-  "homepage": "https://github.com/Hazmi35/extract-docker-baseimg-recipe#readme",
-  "devDependencies": {
-    "@hazmi35/eslint-config": "^8.0.0",
-    "eslint": "^8.4.1"
+  "author": "Hazmi35 <contact@hzmi.xyz> (https://hzmi.xyz)",
+  "type": "module",
+  "main": "src/extract.js",
+  "bin": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "lint": "eslint src/"
   },
   "eslintConfig": {
-    "extends": "@hazmi35/eslint-config/node",
     "parserOptions": {
       "sourceType": "module"
-    }
-  },
-  "engines": {
-    "node": ">=16.8.0"
+    },
+    "extends": "@hazmi35/eslint-config/node"
   },
   "dependencies": {
     "meow": "^10.1.2"
+  },
+  "devDependencies": {
+    "@hazmi35/eslint-config": "^8.1.0"
+  },
+  "engines": {
+    "node": ">=16.8.0"
   }
 }
