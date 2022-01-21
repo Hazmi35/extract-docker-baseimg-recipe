@@ -18,7 +18,8 @@ jobs:
     - name: Setup Node.js
       uses: actions/setup-node@v2.5.1
       with:
-        node-version: 16
+        node-version-file: .node-version
+        cache: "npm"
         check-latest: true
 
     - name: Install dependencies
