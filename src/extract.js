@@ -25,7 +25,7 @@ export function extract(path, options = { applyVariant: true, reverseTags: false
     const tags = [
         ...versions,
         ...originalTags
-    ].map(t => options.applyVariant && variant ? applyVariant(t, variant) : t);
+    ].map(t => (options.applyVariant && variant ? applyVariant(t, variant) : t));
 
     return { tags: options.reverseTags ? tags.reverse() : tags, variant, platforms, version };
 }
