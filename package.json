@@ -31,7 +31,7 @@
     "meow": "^11.0.0"
   },
   "devDependencies": {
-    "@hazmi35/eslint-config": "^8.1.0"
+    "@hazmi35/eslint-config": "^9.0.0"
   },
   "engines": {
     "node": ">=16.8.0"
