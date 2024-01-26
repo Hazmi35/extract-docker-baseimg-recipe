@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} Input
+ * @typedef {object} Input
  * @property {string} path - The Dockerfile path
  * @property {string} key CLI key
  * @property {any} flags CLI flags from meow
@@ -7,6 +7,7 @@
 
 /**
  * Get the Dockerfile content
+ *
  * @private
  * @param {string} input Raw input from CLI
  * @param {string} flags Raw flags input from CLI

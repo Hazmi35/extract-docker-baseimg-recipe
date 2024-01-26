@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import meow from "meow";
-import { getInput } from "./util/getInput.js";
 import { extract } from "./extract.js";
+import { getInput } from "./util/getInput.js";
 
 const cli = meow(`
     Usage
@@ -42,11 +42,11 @@ const cli = meow(`
 const { path, key, flags } = getInput(cli.input, cli.flags);
 
 if (path) {
-    const recipe = extract(path, { applyVariant: flags.applyVariant, reverseTags: flags.reverseTags });
+    const recipe = await extract(path, { applyVariant: flags.applyVariant, reverseTags: flags.reverseTags });
 
     if (key) {
         let value = recipe[key];
-        if (value instanceof Array) value = value.join(flags.seperator === "\\n" ? "\n" : flags.seperator);
+        if (Array.isArray(value)) value = value.join(flags.seperator === "\\n" ? "\n" : flags.seperator);
 
         console.info(value);
     } else {

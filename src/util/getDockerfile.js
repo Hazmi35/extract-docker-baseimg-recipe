@@ -1,21 +1,22 @@
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
+import { readFile } from "node:fs/promises";
 import { EOL } from "node:os";
+import { resolve } from "node:path";
 
 /**
- * @typedef {Object} Dockerfile
+ * @typedef {object} Dockerfile
  * @property {string} file - The Dockerfile content
  * @property {Array.<string>} lines The Dockerfile content, splitted by lines into an Array
  */
 
 /**
  * Get the Dockerfile content
+ *
  * @private
  * @param {string} path The path for the Dockerfile
- * @returns {Dockerfile} Dockerfile content
+ * @returns {Promise<Dockerfile>} Dockerfile content
  */
-export function getDockerfile(path) {
-    const Dockerfile = readFileSync(resolve(path)).toString();
+export async function getDockerfile(path) {
+    const Dockerfile = await readFile(resolve(path)).toString();
     const lines = Dockerfile.split(EOL);
 
     return { file: Dockerfile, lines };

@@ -1,10 +1,10 @@
+import { applyVariant } from "./util/applyVariant.js";
 import { getDockerfile } from "./util/getDockerfile.js";
 import { getRecipe } from "./util/getRecipe.js";
 import { seperateSemver } from "./util/seperateSemver.js";
-import { applyVariant } from "./util/applyVariant.js";
 
 /**
- * @typedef {Object} ImageRecipe
+ * @typedef {object} ImageRecipe
  * @property {Array.<string>} tags - ImageRecipe image tags
  * @property {string} variant ImageRecipe variant
  * @property {Array.<string>} platforms ImageRecipe target platforms
@@ -13,19 +13,25 @@ import { applyVariant } from "./util/applyVariant.js";
 
 /**
  * Extract recipe from Dockerfile in specified path.
- * @param {String} path Path to Dockerfile. Path can be relative, it will starts from cwd
+ *
+ * @param {string} path Path to Dockerfile. Path can be relative, it will starts from cwd
  * @param {{ applyVariant: boolean, reverseTags: boolean }} options Options for extractor
- * @returns {ImageRecipe} The parsed Docker image recipe
+ * @returns {Promise<ImageRecipe>} The parsed Docker image recipe
  */
-export function extract(path, options = { applyVariant: true, reverseTags: false }) {
-    const { lines } = getDockerfile(path);
+export async function extract(path, options) {
+    const opt = {
+        applyVariant: true,
+        reverseTags: false,
+        ...options
+    };
+    const { lines } = await getDockerfile(path);
     const { variant, tags: originalTags, version, platforms } = getRecipe(lines);
 
     const versions = seperateSemver(version);
     const tags = [
         ...versions,
         ...originalTags
-    ].map(t => (options.applyVariant && variant ? applyVariant(t, variant) : t));
+    ].map(tg => (opt.applyVariant && variant ? applyVariant(tg, variant) : tg));
 
-    return { tags: options.reverseTags ? tags.reverse() : tags, variant, platforms, version };
+    return { tags: opt.reverseTags ? tags.reverse() : tags, variant, platforms, version };
 }

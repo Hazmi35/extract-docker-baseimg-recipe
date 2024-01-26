@@ -14,24 +14,18 @@
   "author": "Hazmi35 <contact@hzmi.xyz> (https://hzmi.xyz)",
   "type": "module",
   "main": "src/extract.js",
-  "bin": "src/index.js",
+  "bin": { "@hazmi35/extract-docker-baseimg-recipe": "./src/index.js" },
   "files": [
     "src"
   ],
   "scripts": {
     "lint": "eslint src/"
   },
-  "eslintConfig": {
-    "parserOptions": {
-      "sourceType": "module"
-    },
-    "extends": "@hazmi35/eslint-config/node"
-  },
   "dependencies": {
     "meow": "^13.1.0"
   },
   "devDependencies": {
-    "@hazmi35/eslint-config": "^8.1.0"
+    "@hazmi35/eslint-config": "^13.0.5"
   },
   "engines": {
     "node": ">=20.0.0"
