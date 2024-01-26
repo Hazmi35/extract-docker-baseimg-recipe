@@ -34,6 +34,6 @@
     "@hazmi35/eslint-config": "^8.1.0"
   },
   "engines": {
-    "node": ">=16.8.0"
+    "node": ">=20.0.0"
   }
 }
