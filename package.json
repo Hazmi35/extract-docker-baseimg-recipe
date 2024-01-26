@@ -1,6 +1,6 @@
 {
   "name": "@hazmi35/extract-docker-baseimg-recipe",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Docker (OCI Format) base images recipe extractor.",
   "homepage": "https://github.com/Hazmi35/extract-docker-baseimg-recipe#readme",
   "bugs": {
