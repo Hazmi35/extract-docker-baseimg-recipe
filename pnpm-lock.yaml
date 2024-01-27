@@ -12,7 +12,7 @@ dependencies:
 devDependencies:
   '@hazmi35/eslint-config':
     specifier: ^13.0.5
-    version: 13.0.5(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3)
+    version: 13.2.1(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3)
 
 packages:
 
@@ -106,8 +106,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@hazmi35/eslint-config@13.0.5(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-z+31yOJGQhbE9VJdA6ATcAis1kaVekeN8CVlhuz34a8LQFwm5VNnyC66DTX88BwVW8tJ+LhcwuQI6evJxUoPaw==}
+  /@hazmi35/eslint-config@13.2.1(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-IhsnwQThsBGc5I7r5Z3pZDBK6bO9mR31B2fp9xpIFfhmHrCK4PyOavI58bRFTCItrtFUwTFJEfWSqZYrK8WzXQ==}
     peerDependencies:
       '@eslint/eslintrc': ^3.0.0
       '@stylistic/eslint-plugin': ^1.5.4
@@ -191,7 +191,7 @@ packages:
     engines: {node: '>= 8'}
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
-      fastq: 1.16.0
+      fastq: 1.17.0
     dev: true
 
   /@stylistic/eslint-plugin-js@1.5.4(eslint@8.56.0):
@@ -559,15 +559,15 @@ packages:
       fill-range: 7.0.1
     dev: true
 
-  /browserslist@4.22.2:
-    resolution: {integrity: sha512-0UgcrvQmBDvZHFGdYUehrCNIazki7/lUP3kkoi/r3YB2amZbFM9J43ZRkJTXBUZK4gmx56+Sqk9+Vs9mwZx9+A==}
+  /browserslist@4.22.3:
+    resolution: {integrity: sha512-UAp55yfwNv0klWNapjs/ktHoguxuQNGnOzxYmfnXIS+8AsRDZkSDxg7R1AX3GKzn078SBI5dzwzj/Yx0Or0e3A==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001580
-      electron-to-chromium: 1.4.647
+      electron-to-chromium: 1.4.648
       node-releases: 2.0.14
-      update-browserslist-db: 1.0.13(browserslist@4.22.2)
+      update-browserslist-db: 1.0.13(browserslist@4.22.3)
     dev: true
 
   /builtin-modules@3.3.0:
@@ -660,7 +660,7 @@ packages:
   /core-js-compat@3.35.1:
     resolution: {integrity: sha512-sftHa5qUJY3rs9Zht1WEnmkvXputCyDBczPnr7QDgL8n3qrF3CMXY4VPSYtOLLiOUJcah2WNXREd48iOl6mQIw==}
     dependencies:
-      browserslist: 4.22.2
+      browserslist: 4.22.3
     dev: true
 
   /cross-spawn@7.0.3:
@@ -680,7 +680,7 @@ packages:
       supports-color:
         optional: true
     dependencies:
-      ms: 2.1.2
+      ms: 2.1.3
     dev: true
 
   /debug@4.3.4:
@@ -738,8 +738,8 @@ packages:
       esutils: 2.0.3
     dev: true
 
-  /electron-to-chromium@1.4.647:
-    resolution: {integrity: sha512-Z/fTNGwc45WrYQhPaEcz5tAJuZZ8G7S/DBnhS6Kgp4BxnS40Z/HqlJ0hHg3Z79IGVzuVartIlTcjw/cQbPLgOw==}
+  /electron-to-chromium@1.4.648:
+    resolution: {integrity: sha512-EmFMarXeqJp9cUKu/QEciEApn0S/xRcpZWuAm32U7NgoZCimjsilKXHRO9saeEW55eHZagIDg6XTUOv32w9pjg==}
     dev: true
 
   /enhanced-resolve@5.15.0:
@@ -1167,8 +1167,8 @@ packages:
     resolution: {integrity: sha512-DCXu6Ifhqcks7TZKY3Hxp3y6qphY5SJZmrWMDrKcERSOXWQdMhU9Ig/PYrzyw/ul9jOIyh0N4M0tbC5hodg8dw==}
     dev: true
 
-  /fastq@1.16.0:
-    resolution: {integrity: sha512-ifCoaXsDrsdkWTtiNJX5uzHDsrck5TzfKKDcuFFTIrrc/BS076qgEIfoIy1VeZqViznfKiysPYTh/QeHtnIsYA==}
+  /fastq@1.17.0:
+    resolution: {integrity: sha512-zGygtijUMT7jnk3h26kUms3BkSDp4IfIKjmnqI2tvx6nuBfiF1UqOxbnLfzdv+apBy+53oaImsKtMw/xYbW+1w==}
     dependencies:
       reusify: 1.0.4
     dev: true
@@ -1696,6 +1696,10 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: true
+
+  /ms@2.1.3:
+    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
   /natural-compare@1.4.0:
@@ -2252,13 +2256,13 @@ packages:
       which-boxed-primitive: 1.0.2
     dev: true
 
-  /update-browserslist-db@1.0.13(browserslist@4.22.2):
+  /update-browserslist-db@1.0.13(browserslist@4.22.3):
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
     hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
-      browserslist: 4.22.2
+      browserslist: 4.22.3
       escalade: 3.1.1
       picocolors: 1.0.0
     dev: true
