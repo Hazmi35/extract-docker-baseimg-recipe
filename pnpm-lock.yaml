@@ -12,7 +12,7 @@ dependencies:
 devDependencies:
   '@hazmi35/eslint-config':
     specifier: ^13.0.5
-    version: 13.2.1(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3)
+    version: 13.2.4(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3)
 
 packages:
 
@@ -106,8 +106,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@hazmi35/eslint-config@13.2.1(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-IhsnwQThsBGc5I7r5Z3pZDBK6bO9mR31B2fp9xpIFfhmHrCK4PyOavI58bRFTCItrtFUwTFJEfWSqZYrK8WzXQ==}
+  /@hazmi35/eslint-config@13.2.4(@eslint/eslintrc@3.0.0)(@stylistic/eslint-plugin@1.5.4)(@typescript-eslint/eslint-plugin@6.19.1)(@typescript-eslint/parser@6.19.1)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.0.4)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@50.0.1)(eslint@8.56.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-KvEDedYbzE4wmuuUIiAJkdSmu/JuCAYy43mKHrzJrZ7/zvHrw48fXpinGxsl4Js4wTXW27DIknDOHs/mNfOXzA==}
     peerDependencies:
       '@eslint/eslintrc': ^3.0.0
       '@stylistic/eslint-plugin': ^1.5.4
@@ -564,7 +564,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001580
+      caniuse-lite: 1.0.30001581
       electron-to-chromium: 1.4.648
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.3)
@@ -594,8 +594,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /caniuse-lite@1.0.30001580:
-    resolution: {integrity: sha512-mtj5ur2FFPZcCEpXFy8ADXbDACuNFXg6mxVDqp7tqooX6l3zwm+d8EPoeOSIFRDvHs8qu7/SLFOGniULkcH2iA==}
+  /caniuse-lite@1.0.30001581:
+    resolution: {integrity: sha512-whlTkwhqV2tUmP3oYhtNfaWGYHDdS3JYFQBKXxcUR9qqPWsRhFHhoISO2Xnl/g0xyKzht9mI1LZpiNWfMzHixQ==}
     dev: true
 
   /chalk@2.4.2:
