@@ -16,7 +16,8 @@ import { resolve } from "node:path";
  * @returns {Promise<Dockerfile>} Dockerfile content
  */
 export async function getDockerfile(path) {
-    const Dockerfile = await readFile(resolve(path)).toString();
+    const Dockerfile = await readFile(resolve(path))
+        .then(data => data.toString());
     const lines = Dockerfile.split(EOL);
 
     return { file: Dockerfile, lines };
