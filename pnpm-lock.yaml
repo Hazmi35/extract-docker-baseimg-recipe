@@ -7,7 +7,7 @@ settings:
 dependencies:
   meow:
     specifier: ^13.1.0
-    version: 13.1.0
+    version: 13.2.0
 
 devDependencies:
   '@hazmi35/eslint-config':
@@ -1654,8 +1654,8 @@ packages:
       yallist: 4.0.0
     dev: true
 
-  /meow@13.1.0:
-    resolution: {integrity: sha512-o5R/R3Tzxq0PJ3v3qcQJtSvSE9nKOLSAaDuuoMzDVuGTwHdccMWcYomh9Xolng2tjT6O/Y83d+0coVGof6tqmA==}
+  /meow@13.2.0:
+    resolution: {integrity: sha512-pxQJQzB6djGPXh08dacEloMFopsOqGVRKFPYvPOt9XDZ1HasbgDZA74CJGreSU4G3Ak7EFJGoiH2auq+yXISgA==}
     engines: {node: '>=18'}
     dev: false
 
